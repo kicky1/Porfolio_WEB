@@ -3,7 +3,7 @@ import {Link as LinkS} from 'react-scroll'
 
 export const HomeContainer = styled.div`
     background: #0c0c0c;
-    height: 800px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,32 +52,33 @@ export const HomeContent = styled.div`
 `;
 
 export const HomeH1 = styled.h1`
-    color: #fff;
-    font-size: 64px;
-    text-align: center;
+    font-weight: 800;
+    font-size: clamp(50px, 8vw, 100px);
+    padding: 0 2px;
+    letter-spacing: 2px;
+    color:#fff;
+    cursor: default;
     
 
     @media screen and (max-width: 768px){
-        font-size:  40px;
+        font-size: clamp(30px, 6,5vw, 50px);
     }
 
     @media screen and (max-width: 488px){
-        font-size:  32px;
+        font-size:  39px;
     }
 `;
 
 export const HomeP = styled.p`
     color: #fff;
-    font-size: 32px;
+    font-size: clamp(24px, 3.2vw, 60px);
     text-align: center;
     padding-top: 2%;
 
-    @media screen and (max-width: 768px){
-        font-size:  24px;
-    }
+
 
     @media screen and (max-width: 488px){
-        font-size:  18px;
+        font-size:  20px;
     }
 `;
 
@@ -102,18 +103,13 @@ export const HomeLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    font-size:  22px;
+    font-size: clamp(24px, 3.2vw, 60px);
 
     @media screen and (max-width: 768px){
-        font-size:  16px;
+        font-size:  20px;
         padding: 0 9px;
-        border-bottom: 0px;
     }
 
-    @media screen and (max-width: 488px){
-        font-size:  14px;
-        padding: 0 9px;
-    }
 
     &:hover {
         color: #01bf71;

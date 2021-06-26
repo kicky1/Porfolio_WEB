@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import HomeSection from '../components/HomeSection';
+import AboutSection from '../components/AboutSection'
 
 function Home() {
     
@@ -16,6 +17,7 @@ function Home() {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HomeSection/>
+            <AboutSection/>
         </>
     )
 }
