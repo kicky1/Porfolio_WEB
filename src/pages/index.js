@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import HomeSection from '../components/HomeSection';
 import AboutSection from '../components/AboutSection'
+import SkillsSection from '../components/SkllsSection';
 
 function Home() {
     
@@ -17,6 +18,8 @@ function Home() {
             <Sidebar isOpen={isOpen} toggle={toggle}/>
             <Navbar toggle={toggle}/>
             <HomeSection/>
+            <AboutSection/>
+            <SkillsSection/>
             <AboutSection/>
         </>
     )
