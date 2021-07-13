@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar';
 import HomeSection from '../components/HomeSection';
 import AboutSection from '../components/AboutSection'
 import SkillsSection from '../components/SkllsSection';
+import ProjectsSection from '../components/ProjectsSection';
 
 function Home() {
     
@@ -20,7 +21,7 @@ function Home() {
             <HomeSection/>
             <AboutSection/>
             <SkillsSection/>
-            <AboutSection/>
+            <ProjectsSection/>
         </>
     )
 }

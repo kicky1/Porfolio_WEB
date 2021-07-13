@@ -1,31 +1,76 @@
-import React from 'react'
-import {AboutContainer, AboutContent, AboutH1, AboutP} from './AboutSectionElements'
+import React, { useEffect, useRef } from 'react';
+import {ProjectsContainer,
+    ProjectsContent,
+    ProjectsH1,
+    ProjectsWrapper,
+    ProjectsList,
+    ProjectsItem,
+    ProjectsItemContainer,
+    ProjectsName,
+    ImageWrapper,
+    ProjectsImageHoverContainer,
+    RevealImage,
+    Image,
+    ProjectsInfoContainer,
+    ProjectsInfo,
+    ProjectNumber,
+    ProjectMore,
+    ProjectContent,
+    ProjectImage,
+} from './ProjectSectionElements'
 
-function AboutSectionElements() {
+import Tilt from 'react-parallax-tilt';
+import image1 from '../../images/image1.svg';
+
+
+
+function ProjectsSection() {
+
+    const projects = [
+        { number: "01", name: "e-Trener", path: 'google.com', info: 'Projekt inżynierski wykorzystujący technologię Python.' },
+        { number: "02", name: "eCommerce", path: 'google.com', info: 'Strona sklepu internetowego na podstawie Zalando.' },
+        { number: "03", name: "FlowChart", path: 'google.com', info: 'Projekt strony do tworzenia Flow Cahrtów' },
+    ];
+
+    const options = {
+        scale: 2,
+        max: 30
+      };
+
     return (
         <>
-            <AboutContainer id="about">
-                <AboutContent>
-                    <AboutH1>Trochę o mnie</AboutH1>
-                    <AboutP>
-                        Cześć, mam na imię Krzysiek i jestem studentem Politechniki Gdańskiej. W 2021 roku 
-                        uzyskałem stopień inżyniera z dziedziny informatyki w medycynie na wydziale Elektroniki i Technologii.
-                        Aktualnie kontynuuję naukę na stopniu magisterskim z Sztucznej Inteligencji. Pomimo wykształcenia
-                        bardziej w kierunku związanym z Machine Learning od dłuższego czasu zauważyłem, iż 
-                        prawdziwą przyjemność sprawia mi tworzenie aplikacji webowych, w związku z czym swój 
-                        wolny czas po studiach oraz pracy przeznaczam na naukę frontendu.
-                    </AboutP>
-                    {/* <AboutP>
-                        Jeżeli chodzi o doświadczenie, aktualnie pracuję jako Junior Frontend Developer i zajmuję się nadzorem oraz
-                        tworzeniem aplikacji w różnych frameworkach takich jak React.js, Vue.js również mam styczność z aplikacjami
-                        czysto pisanymi w języku Java Script. Podczas swojej pracy nauczyłem się tworzyć dokumentacje projektowe
-                        w języku Markdown. Praca w zespole również wpłynęła na moją znajomość posługiwania się Git'em jak i oprogramowaniem
-                        Redmine służącym do zarządzanie problemów i śledzenia issues.
-                    </AboutP> */}
-                </AboutContent> 
-            </AboutContainer>
+            <ProjectsContainer>
+                <ProjectsContent>
+                    <ProjectsH1>Moje projekty</ProjectsH1>
+                    <ProjectsWrapper>
+                        
+                        {projects.map((project, index) => (
+                                <Tilt  options={options} >
+                                         <ProjectsItem>
+                                                <ProjectContent src={image1}>
+                                                    <ProjectNumber>
+                                                        {project.number}
+                                                    </ProjectNumber>
+                                                    <ProjectsName>
+                                                        {project.name}
+                                                    </ProjectsName>
+                                                    <ProjectsInfo>
+                                                            {project.info}
+                                                    </ProjectsInfo>
+                                                    <ProjectMore  to={project.path}>
+                                                        Więcej informacji
+                                                    </ProjectMore>
+                                                </ProjectContent>
+                                        </ProjectsItem>
+                                    </Tilt> 
+                                ))
+                                } 
+                        
+                    </ProjectsWrapper>
+                </ProjectsContent> 
+            </ProjectsContainer>
         </>
     )
 }
 
-export default AboutSectionElements
+export default ProjectsSection

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const SkillsContainer = styled.div`
-   background: #0c0c0c;
+   background: #131419;
     min-height: 100vh;
     position: relative;
     z-index: 1;
@@ -42,13 +42,17 @@ export const SkillsList = styled.ul`
     justify-content: space-between;
     list-style: none;
     padding: 5vh 0vh;
-    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.05),
+                5px 5px 15px rgba(0,0,0,0.5);
     min-height: 30vw;
 
     @media (min-width: 1800px) {
         min-height: 840px;
     }
 `
+
+
 
 export const SkillsItem = styled.li`
     position: relative;

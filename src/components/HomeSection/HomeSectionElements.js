@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll'
 
 export const HomeContainer = styled.div`
-    background: #0c0c0c;
+    background: #131419;
     height: 100vh;
     display: flex;
     justify-content: center;

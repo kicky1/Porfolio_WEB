@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const AboutContainer = styled.div`
-    background: #0c0c0c;
+    background: #131419;
     min-height: 100vh;
     position: relative;
     display: flex;
