@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const SkillsContainer = styled.div`
-   background: #131419;
+    background: #131419;
     min-height: 100vh;
     position: relative;
     z-index: 1;
