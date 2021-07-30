@@ -36,7 +36,6 @@ export const NavIcon = styled.div`
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
-    cursor: pointer;
     color: #fff;
 
     &:hover {
@@ -57,7 +56,6 @@ export const NavIcon2 = styled.div`
     /* padding-left: 20px; */
     transform: translate(-240%, 60%);
     font-size: 1.8rem;
-    cursor: pointer;
     color: #fff;
 
     &:hover {
@@ -81,7 +79,6 @@ export const MobileIcon = styled.div`
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
-        cursor: pointer;
         color: #fff;
         transition: all 300ms ease-in-out;
 

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {Link as LinkS} from 'react-scroll'
 
+
 export const HomeContainer = styled.div`
     background: #131419;
     height: 100vh;
@@ -57,7 +58,7 @@ export const HomeH1 = styled.h1`
     padding: 0 2px;
     letter-spacing: 2px;
     color:#fff;
-    cursor: default;
+
     
 
     @media screen and (max-width: 768px){
@@ -102,7 +103,6 @@ export const HomeLinks = styled(LinkS)`
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
-    cursor: pointer;
     font-size: clamp(24px, 3.2vw, 60px);
 
     @media screen and (max-width: 768px){

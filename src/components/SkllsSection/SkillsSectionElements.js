@@ -22,7 +22,6 @@ export const SkillstH1 = styled.h1`
     font-size: clamp(50px, 8vw, 100px);
     letter-spacing: 1px;
     color:#fff;
-    cursor: default;
     padding-bottom: 4%;
     
     

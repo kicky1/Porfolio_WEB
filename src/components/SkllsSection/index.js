@@ -23,6 +23,7 @@ import {Nodejs} from '@styled-icons/boxicons-logos/Nodejs'
 import {Woo} from '@styled-icons/simple-icons/Woo'
 import {Adobephotoshop} from '@styled-icons/simple-icons/Adobephotoshop'
 import {Markdown} from '@styled-icons/boxicons-logos/Markdown'
+import Fade from 'react-reveal/Fade';
 
 
 function SkillsSection() {
@@ -53,20 +54,24 @@ function SkillsSection() {
         <>
             <SkillsContainer>
                 <SkillsContent>
-                    <SkillstH1>Umiejętości</SkillstH1>
+                    <Fade left duration={2000}>
+                        <SkillstH1>Technologie</SkillstH1>
+                    </Fade>
                     <SkillsWrapper>
-                        <SkillsList>
-                            {skills.map((link, index) => (
-                                <SkillsItem key={index}>
-                                    <SkillsSvgWrapper color={link.color}>
-                                        {link.icon}
-                                    </SkillsSvgWrapper>
-                                    <SkillsInfo>
-                                        {link.name}
-                                    </SkillsInfo>
-                                </SkillsItem>
-                            ))}
-                        </SkillsList>
+                        <Fade bottom duration={2000}>
+                            <SkillsList>
+                                {skills.map((link, index) => (
+                                    <SkillsItem key={index}>
+                                        <SkillsSvgWrapper color={link.color}>
+                                            {link.icon}
+                                        </SkillsSvgWrapper>
+                                        <SkillsInfo>
+                                            {link.name}
+                                        </SkillsInfo>
+                                    </SkillsItem>
+                                ))}
+                            </SkillsList>
+                        </Fade>
                     </SkillsWrapper>
                 </SkillsContent> 
             </SkillsContainer>

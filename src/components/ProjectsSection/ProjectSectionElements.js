@@ -6,7 +6,7 @@ import image1 from '../../images/image1.svg';
 
 export const Image = styled.img`
     display: block;
-  width: 100%;
+  width: 90%;
   height: auto;
 
 `;
@@ -21,15 +21,15 @@ export const Overlay = styled.div`
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: .7s ease;
   
-  background-color: #c2b6b6;
+  background-color: #303030;
 
-  background-image: linear-gradient(315deg, #c2b6b6 0%, #576574 74%);
+  background-image:  #303030;
 
 
   text-align: center;
-   transform: translateY(0px);
+transform: translateY(0px);
 
   &:hover{
       opacity:1;
@@ -91,7 +91,6 @@ export const ProjectsH1 = styled.h1`
     font-size: clamp(50px, 8vw, 100px);
     letter-spacing: 1px;
     color:#fff;
-    cursor: default;
     padding-bottom: 4%;
     
     
@@ -106,29 +105,87 @@ export const ProjectsH1 = styled.h1`
 `;
 
 
-export const ProjectMore = styled(Link)`
-    list-style: none;
-    margin-top: 15px;
-    position: sticky;
-    display: inline-block;
-    font-size: 2.5vh;
-    padding: 9px 20px;
-    margin-top: 50px;
-    background: #fff;
-    color: #000;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 500;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-    top: 10%;
 
-    @media screen and (max-width: 488px){
-        font-size:  2vh;
-        top: 7%;
-        margin-top: 15px;
-    }
+
+// export const ProjectMore = styled(Link)`
+//     display: inline-block;
+//     margin-top: 10%;
+//     text-decoration: none;
+//     text-align: center;
+//     width: 250px;
+//     padding: 15px 0;
+//     border-radius: 40px;
+//     overflow: hidden;
+//     position: sticky;
     
-`;
+// `;
+
+// export const ProjectText = styled.span`
+//     font-size: 20px;
+//     font-weight: 400;
+//     color: #ffffff;
+//     letter-spacing: 4px;
+//     position: relative;
+//     z-index: 1;
+
+//     @media screen and (max-width: 488px){
+//         font-size:  2vh;
+//     }
+    
+// `;
+
+// export const ProjectLiquid = styled.div`
+//     width: 250px;
+//     height: 250px;
+//     background: #4973ff;
+//     box-shadow: inset 0 0 50px rgba(0,0,0,.7);
+//     position: absolute;
+//     top: -80px;
+//     left: 0;
+//     transition: .5s;
+
+//     ::before,::after{
+//         content: "";
+//         width: 140%;
+//         height: 130%;
+//         background: #000;
+//         position: absolute;
+//         top: 8%;
+//         left: 40%;
+//         transform: translate(-50%, 75%);
+//     };
+
+//     ::before{
+//         border-radius: 45%;
+//         background: rgba(20,20,20,1);
+//         animation: shake 5s linear infinite;
+//     };
+
+//     ::after{
+//         border-radius: 40%;
+//         background: rgba(20,20,20,0.5);
+//         animation: shake 10s linear infinite;
+//     }
+
+//     @keyframes shake {
+//         0% {
+//             transform: translate(-50%, -75%) rotate(0deg)
+//         }
+//         100% {
+//             transform: translate(-50%, -75%) rotate(360deg)
+//         }
+//     }
+
+//     &:hover{
+//         top: -160px;
+//         box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+//     }
+    
+// `;
+
+
+
+
 
 
 export const ProjectsItemContainer = styled.div`
@@ -207,7 +264,6 @@ export const ProjectsInfo = styled.div`
     font-size: 3vh;
     letter-spacing: 1px;
     color:#fff;
-    cursor: default;
     
     @media screen and (max-width: 488px){
         font-size:  1.8vh;
@@ -244,7 +300,7 @@ export const ProjectsItem = styled.div`
     }
     
 `
-export const ContainerP = styled.div`
+export const ContainerP = styled(Link)`
     position: relative;
     width: 45vh;
     height: 45vh;

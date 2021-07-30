@@ -35,7 +35,6 @@ export const Icon = styled.div`
     right: 1.5rem;
     background: transparent;
     font-size: 2rem;
-    cursor: pointer;
     outline: none;
     
 `;
@@ -66,7 +65,6 @@ export const SidebarLink = styled.div`
     transition: 0.2s ease-in-out;
     text-decoration: none;
     color: #fff;
-    cursor: pointer;
 
     &:hover {
         color: #01bf71;
