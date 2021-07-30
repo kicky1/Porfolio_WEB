@@ -11,6 +11,7 @@ import {
     HomeH1} from './HomeSectionElements';
 
 import Video from '../../videos/video.mp4';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function HomeSectionElements() {
     return (
@@ -24,13 +25,40 @@ function HomeSectionElements() {
                     <HomeP>Frontend Developer</HomeP>
                         <HomeMenu>
                             <HomeItem>
-                                <HomeLinks to='about'>O mnie</HomeLinks>
+                                <HomeLinks>
+                                    <Link
+                                        to="about"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                    >
+                                        O mnie
+                                    </Link>
+                                </HomeLinks>
                             </HomeItem>
                             <HomeItem>
-                                <HomeLinks to='projects'>Projekty</HomeLinks>
+                                <HomeLinks>
+                                    <Link
+                                        to="projects"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        >
+                                            Projekty
+                                    </Link>
+                                </HomeLinks>
                             </HomeItem>
                             <HomeItem>
-                                <HomeLinks to='contact'>Kontkat</HomeLinks>
+                                <HomeLinks>
+                                    <Link
+                                            to="contact"
+                                            spy={true}
+                                            smooth={true}
+                                            duration={500}
+                                        >
+                                        Kontkat
+                                    </Link>
+                                </HomeLinks>
                             </HomeItem>
                         </HomeMenu>
                 </HomeContent>
