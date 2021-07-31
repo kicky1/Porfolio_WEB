@@ -15,7 +15,7 @@ function AboutSectionElements() {
             <AboutContainer id="about">
                 <AboutContent>
                     <Fade left duration={2000}>
-                        <AboutH1>Trochę o mnie</AboutH1>
+                        <AboutH1>O mnie</AboutH1>
                     </Fade>
                     
 

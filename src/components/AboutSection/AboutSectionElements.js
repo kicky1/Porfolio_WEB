@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keyframes } from 'styled-components'
 
 
 export const AboutContainer = styled.div`
@@ -71,13 +72,39 @@ export const AboutP= styled.p`
     }
 `;
 
+const rotation = keyframes`
+
+    0% {
+			border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+	} 
+	
+	50% {
+			border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+  
+	100% {
+		border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+	} 
+
+`;
+
+
 
 export const Image = styled.img`
     max-width: 50vmin;
-
-    border-radius: 10px;
-    box-shadow: -3px -3px 10px rgba(255,255,255,0.2),
-                5px 5px 15px rgba(0,0,0,0.5);
+    background-color: #131419;
+	border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;          
+	animation: ${rotation} 10s infinite;
+	overflow: hidden;
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+box-shadow: 0 0 8px 8px 131419 inset;
+      
+    &:hover{
+        animation-play-state: paused;
+    }
+   
+    
 
 `;
 
