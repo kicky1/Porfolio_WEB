@@ -5,6 +5,7 @@ import HomeSection from '../components/HomeSection';
 import AboutSection from '../components/AboutSection'
 import SkillsSection from '../components/SkllsSection';
 import ProjectsSection from '../components/ProjectsSection';
+import ContactSection from '../components/ContactSection';
 
 function Home() {
     
@@ -22,6 +23,7 @@ function Home() {
             <AboutSection/>
             <SkillsSection/>
             <ProjectsSection/>
+            <ContactSection/>
         </>
     )
 }

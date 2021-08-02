@@ -47,7 +47,7 @@ export const Item = styled.div`
 export const ItemImage = styled.div`
   text-align: center;
   padding: .5rem;
-  padding-top: 5%;
+  padding-top: 0%;
   padding-bottom: 1%;
 `;
 
@@ -97,8 +97,8 @@ export const Image = styled.img`
 	animation: ${rotation} 10s infinite;
 	overflow: hidden;
     -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
-box-shadow: 0 0 8px 8px 131419 inset;
+    -moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 0 8px 8px 131419 inset;
       
     &:hover{
         animation-play-state: paused;

@@ -6,7 +6,6 @@ import Fade from 'react-reveal/Fade';
 
 
 
-
 function AboutSectionElements() {
 
 
@@ -27,20 +26,17 @@ function AboutSectionElements() {
                                     uzyskałem stopień inżyniera z dziedziny informatyki w medycynie na wydziale Elektroniki i Technologii.
                                 </AboutP>
                                 <AboutP>
-                                    Aktualnie kontynuuję naukę na stopniu magisterskim z Sztucznej Inteligencji. Pomimo wykształcenia
-                                    bardziej w kierunku związanym z Machine Learning od dłuższego czasu zauważyłem, iż 
-                                    prawdziwą przyjemność sprawia mi tworzenie aplikacji webowych, w związku z czym swój 
-                                    wolny czas po studiach oraz pracy przeznaczam na naukę tworzenia aplikacji internetowych.
+                                    Aktualnie kontynuuję naukę na stopniu magisterskim z Sztucznej Inteligencji oraz pracuję jako
+                                    Junior Developer w firmie Sevenet. Pomimo wykształcenia związanego z Machine Learning od 
+                                    dłuższego czasu zajmuję się tworzeniem aplikacji webowych.
                                 </AboutP>
                                 <a href="https://docdro.id/Nj7kHd3">
                                     <Button>CV</Button>
                                 </a>
-                                
-
                             </Fade>
                         </Item>
                         <ItemImage>
-                            <Fade right duration={4000}>
+                            <Fade duration={4000}>
                                 <Image src={image}/>  
                             </Fade>
                         </ItemImage>
