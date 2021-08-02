@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import {ContactContainer, ContactContent, ContactH1, ContactWrapper,
-    InputBox,InputLabel, Textarea, Input, ContactForm, Grid, Item, AboutP, Icon, Button, FormBox  } from './ContactSectionElements'
+    InputBox,InputLabel, Textarea, Input, ContactForm, Grid, MainGrid, Item, AboutP, Icon, Button, FormBox  } from './ContactSectionElements'
 
 import {Phone} from '@styled-icons/bootstrap/Phone'
 
@@ -18,18 +18,26 @@ function ContactSectionElements() {
                     <Fade left duration={2000}>
                         <ContactH1>Kontakt</ContactH1>
                     </Fade>
-                    <Grid>
+                    <MainGrid>
                         <Item>
                             <Fade left duration={2000}>
-                                <ContactForm>
+                                <ContactForm  autocomplete="off"> 
                                     <ContactWrapper>
                                         <InputBox>
-                                            <InputLabel>Imię</InputLabel>
-                                            <Input type="text" name="name" />
-                                        </InputBox>
-                                        <InputBox>
-                                            <InputLabel>E-mail</InputLabel>
-                                            <Input type="email" name="email" />
+                                            <Grid>
+                                                <Item>
+                                                    <InputLabel>Imię</InputLabel>
+                                                    <Input type="text" name="name" autocomplete="nope"/>
+                                                </Item>
+                                                <Item>
+                                                    <InputLabel>E-mail</InputLabel>
+                                                    <Input type="email" name="email" autocomplete="off" />
+                                                </Item>
+                                                <Item>
+                                                    <InputLabel>Temat</InputLabel>
+                                                    <Input type="text" name="subject" />
+                                                </Item>
+                                            </Grid>
                                         </InputBox>
                                         <InputBox>
                                             <InputLabel>Treść wiadomości</InputLabel>
@@ -43,15 +51,17 @@ function ContactSectionElements() {
                             </Fade>   
                         </Item>
                         <Item>
-                            <AboutP>
-                            W celu uzyskania informacji odnośnie potencjalnej współpracy proszę o wypełnienie formularza lub
-                            kontakt telefoniczny.
-                            </AboutP>
-                            <Icon>
-                            <Phone/> +48 506804736
-                            </Icon>
+                            <Fade right duration={2000}>
+                                <AboutP>
+                                W celu uzyskania informacji odnośnie potencjalnej współpracy proszę o wypełnienie formularza lub
+                                kontakt telefoniczny.
+                                </AboutP>
+                                <Icon>
+                                <Phone/> +48 506804736
+                                </Icon>
+                            </Fade>
                         </Item>
-                    </Grid>
+                    </MainGrid>
                  
                 </ContactContent> 
             </ContactContainer>

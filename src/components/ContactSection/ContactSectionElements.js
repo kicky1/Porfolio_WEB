@@ -4,7 +4,7 @@ import { keyframes } from 'styled-components'
 
 export const ContactContainer = styled.div`
     background: #131419;
-    min-height: 120vh;
+    min-height: 100vh;
     position: relative;
     z-index: 1;
     
@@ -32,16 +32,13 @@ export const ContactH1 = styled.h1`
 `;
 
 export const ContactWrapper = styled.form`
-    max-width: 80vmin;
+    min-height: 30vmin;
     padding: 1% 5% 5% 5%;
     border-radius: 10px;
     background: #131419;
     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
         5px 5px 15px rgba(0, 0, 0, 0.5);
 
-        @media (min-width: 1800px) {
-            min-height: 840px;
-        }
 `;
 
 export const ContactForm = styled.div`
@@ -52,6 +49,7 @@ export const ContactForm = styled.div`
 export const InputBox = styled.div`
     
     margin-top: 5%;
+    
 `;
 
 export const FormBox = styled.div`
@@ -64,6 +62,7 @@ export const InputLabel = styled.label`
   color: #868686;
   margin-bottom: 5px;
   font-size: 18px;
+  
 
 `;
 
@@ -76,11 +75,12 @@ export const Input = styled.input`
     background: #131419;
     border: none;
     outline: none;
-    border-radius: 40px;
+    border-radius: 20px;
     padding: 5px 15px;
     font-size: 18px;
     box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
-        inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+        inset 2px 2px 6px rgba(0, 0, 0, 0.8);    
+    
 `; 
 
 export const Textarea = styled.textarea`
@@ -97,22 +97,30 @@ export const Textarea = styled.textarea`
     inset 2px 2px 6px rgba(0, 0, 0, 0.8);
 `; 
 
+export const MainGrid = styled.div`
+  display: grid;
+  grid-template-columns: 60% 30%;
+  grid-gap: 8vmin;
+`;
+
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 50px 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40px 40px;
   grid-gap: 5px;
 `;
+
 
 export const Item = styled.div`
   justify-content: center;
   padding: .5rem;
 `;
 
+
 export const AboutP= styled.p`
     color: #fff;
     font-size: clamp( 14px, 2.5vmin, 30px); 
-    padding-top: 4%;
+    padding-top: 15vh;
     padding-bottom: 1%;
     letter-spacing: 2px; 
     line-height: 1.5em;
