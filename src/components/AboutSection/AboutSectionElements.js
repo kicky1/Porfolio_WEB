@@ -4,7 +4,7 @@ import { keyframes } from 'styled-components'
 
 export const AboutContainer = styled.div`
     background: #131419;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
     display: flex;
     z-index: 1;
@@ -24,10 +24,12 @@ export const AboutContent = styled.div`
 `;
 
 export const AboutH1 = styled.h1`
-    font-weight: 800;
-    font-size: clamp(50px, 8vw, 100px);
+    font-weight: 350;
+    font-size: clamp(40px, 5vw, 80px);
     letter-spacing: 1px;
     color:#fff;
+    font-family: 'Segoe UI';
+    
     
 
     @media screen and (max-width: 768px){
@@ -49,6 +51,10 @@ export const ItemImage = styled.div`
   padding: .5rem;
   padding-top: 0%;
   padding-bottom: 1%;
+
+  @media screen and (max-width: 768px){
+        display: none;
+    }
 `;
 
 export const Grid = styled.div`
@@ -56,6 +62,10 @@ export const Grid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 50px 50px;
   grid-gap: 5px;
+
+  @media screen and (max-width: 768px){
+    grid-template-columns: repeat(1, 1fr);
+    }
 `;
 
 
@@ -65,7 +75,9 @@ export const AboutP= styled.p`
     padding-top: 4%;
     padding-bottom: 1%;
     letter-spacing: 2px; 
-    line-height: 1.5em;
+    line-height: 1.6em;
+    font-family: 'Segoe UI';
+    font-weight: 250;
 
     @media only screen and (max-width: 768px){
         font-size: 3vmin;

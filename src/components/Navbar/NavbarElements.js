@@ -1,42 +1,55 @@
 import styled from 'styled-components'
+import {Link as LinkS} from 'react-scroll'
 
 
 export const Nav = styled.nav`
-    background: transparent;
-    height: 80px;
-    margin-top: -80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 10;
-
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 10px 50px;
+    z-index: 2;
+    background-color: ${({ scrollY }) => (scrollY > 100 ? "#131419" : "transparent")};
+    border: ${({ scrollY }) => (scrollY > 100 ? "1px solid" : "none")}; 
+    box-shadow: ${({ scrollY }) => (scrollY > 100 ? "0px 5px 12px -1px rgba(0, 0, 0, 0.5)" : "none")};
+    
     @media screen and (max-width: 960px){
         transtion: 0.8 all ease;
+    }
+
+    @media screen and (max-width: 768px){
+        display: none;
     }
 `;
 
 export const NavbarContainer = styled.div`
+    position: relative;
     display: flex;
     justify-content: center;
-    height: 80px;
-    z-index: 10;
-    width:100%;
-    padding: 0 24px;
-    max-width: 1100px;
+    align-items: center;
+`;
+
+export const Logo = styled.div`
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
 `;
 
-export const NavIcon = styled.div`
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+export const NavLink = styled(LinkS)`
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
     color: #fff;
+    font-size: 1.2em;
 
     &:hover {
         color: #01bf71;
@@ -46,17 +59,16 @@ export const NavIcon = styled.div`
     @media screen and (max-width: 768px){
         display: none;
     }
+
 `;
 
-export const NavIcon2 = styled.div`
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    /* padding-left: 20px; */
-    transform: translate(-240%, 60%);
-    font-size: 1.8rem;
+
+export const NavIcon = styled.div`
+    position: relative;
+    margin: 0 5px;
+    text-decoration: none;
     color: #fff;
+    font-size: 1.2em;
 
     &:hover {
         color: #01bf71;

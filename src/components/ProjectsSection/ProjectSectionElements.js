@@ -58,6 +58,7 @@ export const ProjectsContainer = styled.div`
     min-height: 100vh;
     position: relative;
     z-index: 1;
+    
 
     /* :before {
         content: '';
@@ -83,20 +84,20 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectsContent = styled.div`
-   padding: 1% 3% 3% 3%; 
+   padding: 5% 3% 0 3%;
 `;
 
 export const ProjectsH1 = styled.h1`
-    font-weight: 800;
-    font-size: clamp(50px, 8vw, 100px);
+    font-weight: 350;
+    font-size: clamp(40px, 5vw, 80px);
     letter-spacing: 1px;
     color:#fff;
-    padding-bottom: 4%;
+    font-family: 'Segoe UI';
     
     
 
     @media screen and (max-width: 768px){
-        font-size: clamp(30px, 6,5vw, 50px);
+        font-size: clamp(30px, 4vw, 50px);
     }
 
     @media screen and (max-width: 488px){
@@ -275,7 +276,7 @@ export const ProjectsItem = styled.div`
     position: relative;
     width: 49vh;
     height: 49vh;
-    margin: 10vh;
+    margin: 5vh;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
     border-radius: 15px;
     background: rgba(255,255,255,0.1);

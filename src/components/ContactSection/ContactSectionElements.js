@@ -11,16 +11,16 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactContent = styled.div`
-    padding: 1% 3% 3% 3%;
+    padding: 5% 3% 0 3%;
     
 `;
 
 export const ContactH1 = styled.h1`
-    font-weight: 800;
-    font-size: clamp(50px, 8vw, 100px);
+    font-weight: 350;
+    font-size: clamp(40px, 5vw, 80px);
     letter-spacing: 1px;
     color:#fff;
-    
+    font-family: 'Segoe UI';
 
     @media screen and (max-width: 768px){
         font-size: clamp(30px, 6,5vw, 50px);
@@ -33,35 +33,51 @@ export const ContactH1 = styled.h1`
 
 export const ContactWrapper = styled.form`
     min-height: 30vmin;
-    padding: 1% 5% 5% 5%;
+    padding: 1% 2% 2% 2%;
     border-radius: 10px;
     background: #131419;
     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
         5px 5px 15px rgba(0, 0, 0, 0.5);
 
+
+
 `;
 
 export const ContactForm = styled.div`
          
-    padding: 5% 0% 0% 0%;
+    padding: 3% 0% 0% 0%;
 `;
 
 export const InputBox = styled.div`
     
-    margin-top: 5%;
+    margin-top: 0.2rem;
+    
+`;
+
+export const MessageBox = styled.div`
+    
+    margin-top: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
     
 `;
 
 export const FormBox = styled.div`
     text-align: right;
-    margin-top: 5%;
+    margin-top: 1%;
 `;
+
+
 
 export const InputLabel = styled.label`
   display: block;
   color: #868686;
-  margin-bottom: 5px;
-  font-size: 18px;
+  margin-bottom: 0px;
+  font-size: 2.5vmin;
+
+  @media only screen and (max-width: 768px){
+    font-size: 4vmin;
+}
   
 
 `;
@@ -101,6 +117,9 @@ export const MainGrid = styled.div`
   display: grid;
   grid-template-columns: 60% 30%;
   grid-gap: 8vmin;
+  @media only screen and (max-width: 768px){
+    grid-template-columns: repeat(1, 1fr);
+}
 `;
 
 export const Grid = styled.div`
@@ -108,22 +127,32 @@ export const Grid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 40px 40px;
   grid-gap: 5px;
+
+  @media only screen and (max-width: 768px){
+    grid-template-columns: repeat(1, 5fr);
+    grid-gap: 50px;
+}
+  
 `;
 
 
 export const Item = styled.div`
   justify-content: center;
   padding: .5rem;
+  font-weight: 350;
+  
 `;
 
 
 export const AboutP= styled.p`
     color: #fff;
     font-size: clamp( 14px, 2.5vmin, 30px); 
-    padding-top: 15vh;
+    padding-top: 4%;
     padding-bottom: 1%;
     letter-spacing: 2px; 
-    line-height: 1.5em;
+    line-height: 1.6em;
+    font-family: 'Segoe UI';
+    font-weight: 250;
 
     @media only screen and (max-width: 768px){
         font-size: 3vmin;
@@ -135,7 +164,7 @@ export const Icon= styled.div`
     color: #fff;
     max-width: clamp( 20px, 5vmin, 50px); 
     white-space:nowrap;
-    
+    font-weight: 250;
 
     @media only screen and (max-width: 768px){
     }
@@ -167,6 +196,12 @@ export const Button = styled.button`
         font-size: 2vh;
         width: 10vw;
         height: 5vh;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 2vh;
+        width: 6rem;
+        height: 2.5rem;
     }
 `;
 

@@ -52,7 +52,7 @@ function SkillsSection() {
 
     return (
         <>
-            <SkillsContainer>
+            <SkillsContainer  id="skills">
                 <SkillsContent>
                     <Fade left duration={2000}>
                         <SkillstH1>Technologie</SkillstH1>

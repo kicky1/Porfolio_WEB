@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import {ContactContainer, ContactContent, ContactH1, ContactWrapper,
-    InputBox,InputLabel, Textarea, Input, ContactForm, Grid, MainGrid, Item, AboutP, Icon, Button, FormBox  } from './ContactSectionElements'
+    InputBox, MessageBox, InputLabel, Textarea, Input, ContactForm, Grid, MainGrid, Item, AboutP, Icon, Button, FormBox  } from './ContactSectionElements'
 
 import {Phone} from '@styled-icons/bootstrap/Phone'
 
@@ -39,10 +39,10 @@ function ContactSectionElements() {
                                                 </Item>
                                             </Grid>
                                         </InputBox>
-                                        <InputBox>
+                                        <MessageBox>
                                             <InputLabel>Treść wiadomości</InputLabel>
                                             <Textarea name="message" rows="8"></Textarea>
-                                        </InputBox>
+                                        </MessageBox>
                                         <FormBox>
                                             <Button>Wyślij</Button>
                                         </FormBox>  

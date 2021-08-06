@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Link as LinkS} from 'react-scroll'
+
 
 
 export const HomeContainer = styled.div`
@@ -44,9 +44,8 @@ export const VideoBg = styled.video`
 
 export const HomeContent = styled.div`
     z-index: 3;
-    max-width: 1200px;
+    padding: 1% 3% 3% 3%;
     position: absolute;
-    padding: 8px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,27 +95,3 @@ export const HomeItem = styled.div`
     
 `;
 
-export const HomeLinks = styled(LinkS)`
-    color: white;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
-    font-size: clamp(24px, 3.2vw, 60px);
-
-    @media screen and (max-width: 768px){
-        font-size:  20px;
-        padding: 0 9px;
-    }
-
-
-    &:hover {
-        color: #01bf71;
-        transition: 0.2s ease-in-out
-    }
-
-    /* &:active {
-        border-bottom: 3px solid #01bf71;
-    } */
-`;

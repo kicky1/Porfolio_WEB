@@ -10,7 +10,7 @@ export const SkillsContainer = styled.div`
 `;
 
 export const SkillsContent = styled.div`
-     padding: 1% 3% 3% 3%;
+     padding: 5% 3% 0 3%;
 `;
 
 export const SkillsWrapper = styled.div`
@@ -18,11 +18,13 @@ export const SkillsWrapper = styled.div`
 `;
 
 export const SkillstH1 = styled.h1`
-    font-weight: 800;
-    font-size: clamp(50px, 8vw, 100px);
+    font-weight: 350;
+    font-size: clamp(40px, 5vw, 80px);
     letter-spacing: 1px;
     color:#fff;
+    font-family: 'Segoe UI';;
     padding-bottom: 4%;
+    
     
     
 
@@ -74,10 +76,15 @@ export const SkillsInfo = styled.span`
     position: relative;
     z-index: 1;
     text-transform: uppercase;
-    font-size: clamp(12px, 2.5vw, 20px);
+    font-size: clamp(12px, 2vw, 20px);
     white-space: nowrap;
     margin-top: 10px;
     color: #fff;
+
+    letter-spacing: 2px; 
+    line-height: 1.3em;
+    font-family: 'Segoe UI';
+    font-weight: 250;
 `
 
 export const SkillsSvgWrapper = styled.span`
