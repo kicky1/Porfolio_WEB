@@ -3,27 +3,14 @@ import {ProjectsContainer,
     ProjectsContent,
     ProjectsH1,
     ProjectsWrapper,
-    ProjectsList,
-    ProjectsItem,
-    ProjectsItemContainer,
     ProjectsName,
-    ImageWrapper,
-    ProjectsImageHoverContainer,
-    RevealImage,
-   
-    ProjectsInfoContainer,
     ProjectsInfo,
     ProjectNumber,
-    ProjectMore,
     ProjectContent,
-    ProjectImage,
-    ProjectText,
-    ProjectLiquid,
-
     ContainerP, 
     Image, 
     Overlay, 
-    Text,
+    ProjectsTech
 } from './ProjectSectionElements'
 
 import Tilt from 'react-parallax-tilt';
@@ -38,10 +25,10 @@ import video from '../../images/video.svg'
 function ProjectsSection() {
 
     const projects = [
-        { number: "01", name: "e-Trener", path: 'google.com', image: etrener, info: 'Projekt inżynierski wykorzystujący technologię Python.' },
-        { number: "02", name: "eCommerce", path: 'google.com', image: ecommerce, info: 'Strona sklepu internetowego na podstawie odzieżowego Zalando.' },
-        { number: "03", name: "FlowChart", path: 'google.com', image: flowchart, info: 'Projekt strony do tworzenia zaawansowanych Flow Cahrtów z generacją pliku json.' },
-        { number: "04", name: "VideoSearch", path: 'google.com', image: video, info: 'Projekt strony do wyszukiwania informacji na temat wybranego filmu.' },
+        { number: "01", name: "e-Trener", path: 'https://github.com/kicky1/eTrener2', image: etrener, info: 'Aplikacja słuąca do doskonalenia wykonywanych na żywo ćwiczeń.', tech: 'Python' },
+        { number: "02", name: "eCommerce", path: 'https://github.com/kicky1/eCommerce', image: ecommerce, info: 'Aplikacja internetowa eCommerce na podstawie strony z ubraniami Zalando.', tech: 'React, Redux, Node' },
+        { number: "03", name: "FlowChart", path: 'https://github.com/kicky1/FlowChart', image: flowchart, info: 'Projekt strony do tworzenia zaawansowanych Flow Cahrtów z generacją pliku json.', tech: 'React, Redux' },
+        { number: "04", name: "VideoSearch", path: 'google.com', image: video, info: 'Aplikacja internetowa słuąca do wyszukiwania filmów za pomocą słów kluczowych.', tech: 'React, Redux, Node' },
 
     ];
 
@@ -63,7 +50,7 @@ function ProjectsSection() {
                         {projects.map((project, index) => (
                                     <Tilt  options={options} key={index}>
                                          {/* <ProjectsItem key={index}>    */}
-                                         <ContainerP to={project.path}>
+                                         <ContainerP href={project.path}>
                                             <Image src={project.image} alt="Avatar"/>
                                             <Overlay>
                                             <ProjectContent>  
@@ -74,30 +61,14 @@ function ProjectsSection() {
                                                         {project.name}
                                                     </ProjectsName>
                                                     <ProjectsInfo>
-                                                            {project.info}
+                                                        {project.info}
                                                     </ProjectsInfo>
-                                                    {/* <ProjectMore  to={project.path}>
-                                                        <ProjectText>Więcej informacji</ProjectText>
-                                                        <ProjectLiquid/>
-                                                    </ProjectMore> */}
+                                                    <ProjectsTech>
+                                                        Technologie: {project.tech}
+                                                    </ProjectsTech>
                                                 </ProjectContent> 
                                             </Overlay>
                                         </ContainerP>
-                                                {/* <ProjectContent>  
-                                                    <ProjectNumber>
-                                                        {project.number}
-                                                    </ProjectNumber>
-                                                    <ProjectsName>
-                                                        {project.name}
-                                                    </ProjectsName>
-                                                    <ProjectsInfo>
-                                                            {project.info}
-                                                    </ProjectsInfo>
-                                                    <ProjectMore  to={project.path}>
-                                                        Więcej informacji
-                                                    </ProjectMore>
-                                                </ProjectContent>                */}
-                                        {/* </ProjectsItem> */}
                                     </Tilt> 
                                 ))
                                 } 

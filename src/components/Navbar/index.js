@@ -10,7 +10,6 @@ function Navbar({toggle}) {
     const [scrollY, setScrollY] = React.useState(0);
 
     function handleScroll() {
-        // Change Header background color.
         setScrollY(window.pageYOffset);
       }
 
