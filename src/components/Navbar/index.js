@@ -1,5 +1,5 @@
 import React from 'react'
-import {Nav, NavbarContainer, NavIcon, NavIcon2,MobileIcon, NavLink, Logo} from './NavbarElements'
+import {Nav, NavbarContainer, NavIcon, Point,MobileIcon, NavLink, Logo} from './NavbarElements'
 import {GoMarkGithub} from 'react-icons/go';
 import {ImLinkedin} from 'react-icons/im';
 import {FaBars} from 'react-icons/fa';
@@ -23,7 +23,7 @@ function Navbar({toggle}) {
     return (
         <>
             <Nav scrollY={scrollY}>
-                <Logo>Logo</Logo>
+                <Logo>KWicki<Point>.</Point></Logo>
                 <NavbarContainer>
                     <NavLink>
                         <Link to="home"

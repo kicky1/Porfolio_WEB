@@ -33,6 +33,14 @@ export const NavbarContainer = styled.div`
     align-items: center;
 `;
 
+export const Point = styled.div`
+    display: inline-block;
+    font-weight:900;
+    color: green;
+
+`;
+
+
 export const Logo = styled.div`
     position: relative;
     font-weight: 700;
