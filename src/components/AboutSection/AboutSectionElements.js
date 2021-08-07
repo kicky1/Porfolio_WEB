@@ -23,6 +23,25 @@ export const AboutContent = styled.div`
     
 `;
 
+export const LinkSevenet = styled.a`
+    color: #fff;
+
+    :visited{
+        color: #fff;
+    }
+`;
+
+export const H3 = styled.h4`
+    color: #fff;
+    font-size: clamp( 14px, 2.5vmin, 30px); 
+    font-weight: 450;
+    display: inline-block;
+
+    @media only screen and (max-width: 768px){
+        font-size: 3vmin;
+    }
+`;
+
 export const AboutH1 = styled.h1`
     font-weight: 350;
     font-size: clamp(40px, 5vw, 80px);
