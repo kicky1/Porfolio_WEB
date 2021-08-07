@@ -70,15 +70,15 @@ export const ProjectNumber = styled.span`
     position: absolute;
     font-size: clamp(250px, 20vw, 350px);
     top: -8vmin;
-    right: 2vmin;
+    right: -1vmin;
     color: rgba(255,255,255, 0.05);
     font-weight:500;
     pointer-events: none;
 
-    @media screen and (max-width: 1500px){
-        font-size: clamp(200px, 17vw, 300px);
-        top: -10vh;
-        right: 2vmin;
+    @media only screen and (min-height: 1200px){
+        font-size: clamp(450px, 35vw, 500px);
+        top: -9vmin;
+        right: 0vmin;
     }
 
     @media screen and (max-width: 488px){
@@ -86,6 +86,7 @@ export const ProjectNumber = styled.span`
         top: -40px;
         right: 2px;
     }
+    
 `;
 
 
@@ -102,6 +103,10 @@ export const ProjectsName = styled.span`
 
     @media screen and (max-width: 488px){
         font-size:  4.5vh;
+    }
+
+    @media only screen and (min-height: 1200px){
+        font-size: clamp( 40px, 5vmin, 70px); 
     }
 `;
 
@@ -120,6 +125,10 @@ export const ProjectsInfo = styled.div`
     @media screen and (max-width: 488px){
         font-size:  1.8vh;
     }
+
+    @media only screen and (min-height: 1200px){
+        padding-top: 2.5rem;
+    }
 `;
 
 export const ProjectsTech = styled.div`
@@ -136,6 +145,10 @@ export const ProjectsTech = styled.div`
 
     @media screen and (max-width: 488px){
         font-size:  1.8vh;
+    }
+
+    @media only screen and (min-height: 1200px){
+        padding-top: 6rem;
     }
 `;
 

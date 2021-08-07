@@ -49,7 +49,9 @@ export const Logo = styled.div`
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
-
+    @media only screen and (min-height: 1200px){
+        font-size: clamp(30px, 4vh, 50px);
+    } 
 `;
 
 export const NavLink = styled(LinkS)`
@@ -67,6 +69,9 @@ export const NavLink = styled(LinkS)`
     @media screen and (max-width: 768px){
         display: none;
     }
+    @media only screen and (min-height: 1200px){
+        font-size: clamp(30px, 2.5vh, 50px);
+    } 
 
 `;
 
@@ -86,6 +91,11 @@ export const NavIcon = styled.div`
     @media screen and (max-width: 768px){
         display: none;
     }
+
+    @media only screen and (min-height: 1200px){
+        font-size: clamp(30px, 2.3vh, 50px);
+        margin: 0 10px;
+    } 
 `;
 
 export const MobileIcon = styled.div`

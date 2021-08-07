@@ -39,7 +39,9 @@ export const ContactWrapper = styled.form`
     box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
         5px 5px 15px rgba(0, 0, 0, 0.5);
 
-
+    @media only screen and (min-height: 1200px){
+        min-height: 50vmin;
+    }   
 
 `;
 
@@ -49,9 +51,7 @@ export const ContactForm = styled.div`
 `;
 
 export const InputBox = styled.div`
-    
     margin-top: 0.2rem;
-    
 `;
 
 export const MessageBox = styled.div`
@@ -60,6 +60,9 @@ export const MessageBox = styled.div`
     padding-left: 10px;
     padding-right: 10px;
     
+    @media only screen and (min-height: 1200px){
+    margin-top: 4rem;
+}
 `;
 
 export const FormBox = styled.div`
@@ -111,6 +114,10 @@ export const Textarea = styled.textarea`
     width: 100%; 
     box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
     inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+
+    @media only screen and (min-height: 1200px){
+        font-size: clamp( 20px, 2vmin, 50px);
+    }  
 `; 
 
 export const MainGrid = styled.div`
@@ -163,6 +170,7 @@ export const Icon= styled.div`
     padding-top: 10%;
     color: #fff;
     max-width: clamp( 20px, 5vmin, 50px); 
+    font-size: clamp( 20px, 2.5vmin, 50px);
     white-space:nowrap;
     font-weight: 250;
 
