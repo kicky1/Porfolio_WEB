@@ -18,7 +18,7 @@ export const Overlay = styled.div`
     right: 0;
     height: 100%;
     width: 100%;
-  /* opacity: 0; */
+    opacity: 0;
     transition: .7s ease;
     background-color: #303030;
     background-image:  #303030;
@@ -60,13 +60,7 @@ export const ProjectsH1 = styled.h1`
 
 
 export const ProjectContent = styled.span`
-   
     transition: 0.5s;
-
-   &:hover{
-       
-   }
-
 `;
 
 
