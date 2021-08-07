@@ -6,16 +6,16 @@ import image1 from '../../images/image1.svg';
 
 export const Image = styled.img`
     display: block;
-  width: 90%;
-  height: auto;
-
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 `;
 
 export const Overlay = styled.div`
     padding-top: 20px;
     position: absolute;
-    left: 0;
-    right: 0;
+    /* left: 0;
+    right: 0; */
     height: 100%;
     width: 100%;
     opacity: 0;
