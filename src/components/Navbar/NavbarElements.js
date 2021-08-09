@@ -2,16 +2,13 @@ import styled from 'styled-components'
 
 export const Nav = styled.div`
     position: fixed;
-    top: 10;
+    top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    // padding: 10px 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     z-index: 2;
     background-color: ${({ scrollY }) => (scrollY > 100 ? "#131419" : "transparent")};
     border: ${({ scrollY }) => (scrollY > 100 ? "1px solid" : "none")}; 
