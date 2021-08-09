@@ -48,9 +48,7 @@ export const SkillsList = styled.ul`
                 5px 5px 15px rgba(0,0,0,0.5);
     min-height: 30vw;
 
-    @media (min-width: 1800px) {
-        min-height: 840px;
-    }
+
 `
 
 
