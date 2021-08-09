@@ -16,7 +16,7 @@ function ContactSectionElements() {
                         <ContactH1>Kontakt</ContactH1>
                     <MainGrid>
                         <Item>
-                                <ContactForm  autocomplete="off"> 
+                                <ContactForm> 
                                     <ContactWrapper>
                                         <InputBox>
                                             <Grid>
@@ -36,7 +36,7 @@ function ContactSectionElements() {
                                         </InputBox>
                                         <MessageBox>
                                             <InputLabel>Treść wiadomości</InputLabel>
-                                            <Textarea name="message" rows="8"></Textarea>
+                                            <Textarea name="message" rows="12"></Textarea>
                                         </MessageBox>
                                         <FormBox>
                                             <Button>Wyślij</Button>

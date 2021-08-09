@@ -55,7 +55,7 @@ export const InputBox = styled.div`
 
 export const MessageBox = styled.div`
     
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding-left: 10px;
     padding-right: 10px;
     
@@ -94,7 +94,6 @@ export const Input = styled.input`
     border: none;
     outline: none;
     border-radius: 20px;
-    padding: 5px 15px;
     font-size: 18px;
     box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
         inset 2px 2px 6px rgba(0, 0, 0, 0.8);    
@@ -104,7 +103,6 @@ export const Input = styled.input`
 export const Textarea = styled.textarea`
     margin-top: 10px;
     color: #868686;
-    padding: 1em;
     resize: none;
     background: #131419;
     border: none;
@@ -150,7 +148,7 @@ export const Item = styled.div`
 `;
 
 
-export const AboutP= styled.p`
+export const AboutP= styled.div`
     color: #fff;
     font-size: clamp( 14px, 2.5vmin, 30px); 
     padding-top: 4%;
