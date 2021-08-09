@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 
-export const Nav = styled.div`
+export const Nav = styled.nav`
     position: fixed;
     top: 0;
     left: 0;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
+    padding: 10px 50px;
     z-index: 2;
     background-color: ${({ scrollY }) => (scrollY > 100 ? "#131419" : "transparent")};
     border: ${({ scrollY }) => (scrollY > 100 ? "1px solid" : "none")}; 
@@ -24,7 +25,7 @@ export const Nav = styled.div`
 `;
 
 export const NavbarContainer = styled.div`
-    
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +40,7 @@ export const Point = styled.div`
 
 
 export const Logo = styled.div`
-    
+    position: relative;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
@@ -52,7 +53,7 @@ export const Logo = styled.div`
 `;
 
 export const NavLink = styled.div`
-   
+    position: relative;
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
@@ -74,7 +75,7 @@ export const NavLink = styled.div`
 
 
 export const NavIcon = styled.div`
-   
+    position: relative;
     margin: 0 5px;
     text-decoration: none;
     color: #fff;
