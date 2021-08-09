@@ -25,7 +25,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
-    position: relative;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@ export const Point = styled.div`
 
 
 export const Logo = styled.div`
-    position: relative;
+    
     font-weight: 700;
     color: #fff;
     text-decoration: none;
@@ -53,7 +53,7 @@ export const Logo = styled.div`
 `;
 
 export const NavLink = styled.div`
-    position: relative;
+   
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
@@ -75,7 +75,7 @@ export const NavLink = styled.div`
 
 
 export const NavIcon = styled.div`
-    position: relative;
+   
     margin: 0 5px;
     text-decoration: none;
     color: #fff;
