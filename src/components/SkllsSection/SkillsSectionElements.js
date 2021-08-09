@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const SkillsContainer = styled.div`
     background: #131419;
     min-height: 100vh;
-    position: relative;
+   
     z-index: 1;
   
 `;
@@ -56,7 +56,7 @@ export const SkillsList = styled.ul`
 
 
 export const SkillsItem = styled.li`
-    position: relative;
+    
     flex-basis: 19.5%;
     display: grid;
     place-items: center;
@@ -73,7 +73,7 @@ export const SkillsItem = styled.li`
 
 
 export const SkillsInfo = styled.span`
-    position: relative;
+    
     z-index: 1;
     text-transform: uppercase;
     font-size: clamp(12px, 2vw, 20px);
