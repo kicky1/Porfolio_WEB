@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import {ProjectsContainer,
     ProjectsContent,
     ProjectsH1,
@@ -14,7 +14,6 @@ import {ProjectsContainer,
 } from './ProjectSectionElements'
 
 import Tilt from 'react-parallax-tilt';
-import Fade from 'react-reveal/Fade';
 import ecommerce from '../../images/ecommerce.svg'
 import etrener from '../../images/etrener.svg'
 import flowchart from '../../images/flowchart.svg'
@@ -42,11 +41,8 @@ function ProjectsSection() {
         <>
             <ProjectsContainer id="projects">
                 <ProjectsContent>
-                    <Fade left duration={2000}>
                         <ProjectsH1>Portfolio</ProjectsH1>
-                    </Fade>
                     <ProjectsWrapper>
-                        <Fade left duration={2000}>
                         {projects.map((project, index) => (
                                     <Tilt  options={options} key={index}>
                                          {/* <ProjectsItem key={index}>    */}
@@ -71,8 +67,7 @@ function ProjectsSection() {
                                         </ContainerP>
                                     </Tilt> 
                                 ))
-                                } 
-                        </Fade>             
+                                }            
                     </ProjectsWrapper>
                 </ProjectsContent> 
             </ProjectsContainer>

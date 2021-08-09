@@ -1,6 +1,4 @@
 import React from 'react'
-import { useEffect, useState } from 'react';
-import Fade from 'react-reveal/Fade';
 import {ContactContainer, ContactContent, ContactH1, ContactWrapper,
     InputBox, MessageBox, InputLabel, Textarea, Input, ContactForm, Grid, MainGrid, Item, AboutP, Icon, Button, FormBox  } from './ContactSectionElements'
 
@@ -15,12 +13,9 @@ function ContactSectionElements() {
         <>
             <ContactContainer id="contact">
                 <ContactContent>
-                    <Fade left duration={2000}>
                         <ContactH1>Kontakt</ContactH1>
-                    </Fade>
                     <MainGrid>
                         <Item>
-                            <Fade left duration={2000}>
                                 <ContactForm  autocomplete="off"> 
                                     <ContactWrapper>
                                         <InputBox>
@@ -47,11 +42,9 @@ function ContactSectionElements() {
                                             <Button>Wyślij</Button>
                                         </FormBox>  
                                     </ContactWrapper>
-                                </ContactForm>
-                            </Fade>   
+                                </ContactForm> 
                         </Item>
                         <Item>
-                            <Fade right duration={2000}>
                                 <AboutP>
                                 W celu uzyskania informacji odnośnie potencjalnej współpracy proszę o wypełnienie formularza lub
                                 kontakt telefoniczny.
@@ -59,7 +52,6 @@ function ContactSectionElements() {
                                 <Icon>
                                 <Phone/> +48 506804736
                                 </Icon>
-                            </Fade>
                         </Item>
                     </MainGrid>
                  

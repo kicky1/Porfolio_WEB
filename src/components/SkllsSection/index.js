@@ -15,15 +15,13 @@ import {Vuejs} from '@styled-icons/boxicons-logos/Vuejs';
 import {Bootstrap} from '@styled-icons/boxicons-logos/Bootstrap';
 import {Java} from '@styled-icons/fa-brands/Java';
 import {Python} from '@styled-icons/boxicons-logos/Python';
-import {StyledComponents} from '@styled-icons/simple-icons';
 import { Github } from '@styled-icons/bootstrap/Github';
 import {Adobexd} from '@styled-icons/simple-icons/Adobexd'
 import {Mongodb} from '@styled-icons/simple-icons/Mongodb'
 import {Nodejs} from '@styled-icons/boxicons-logos/Nodejs'
 import {Woo} from '@styled-icons/simple-icons/Woo'
 import {Adobephotoshop} from '@styled-icons/simple-icons/Adobephotoshop'
-import {Markdown} from '@styled-icons/boxicons-logos/Markdown'
-import Fade from 'react-reveal/Fade';
+
 
 
 function SkillsSection() {
@@ -54,11 +52,8 @@ function SkillsSection() {
         <>
             <SkillsContainer  id="skills">
                 <SkillsContent>
-                    <Fade left duration={2000}>
                         <SkillstH1>Technologie</SkillstH1>
-                    </Fade>
                     <SkillsWrapper>
-                        <Fade bottom duration={2000}>
                             <SkillsList>
                                 {skills.map((link, index) => (
                                     <SkillsItem key={index}>
@@ -71,7 +66,6 @@ function SkillsSection() {
                                     </SkillsItem>
                                 ))}
                             </SkillsList>
-                        </Fade>
                     </SkillsWrapper>
                 </SkillsContent> 
             </SkillsContainer>

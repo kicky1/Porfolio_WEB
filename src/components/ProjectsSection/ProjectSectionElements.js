@@ -1,6 +1,5 @@
-import styled, { css, keyframes } from 'styled-components';
+import styled from 'styled-components';
 
-import image1 from '../../images/image1.svg';
 
 
 export const Image = styled.img`

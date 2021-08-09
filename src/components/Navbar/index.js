@@ -3,7 +3,7 @@ import {Nav, NavbarContainer, NavIcon, Point,MobileIcon, NavLink, Logo} from './
 import {GoMarkGithub} from 'react-icons/go';
 import {ImLinkedin} from 'react-icons/im';
 import {FaBars} from 'react-icons/fa';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 function Navbar({toggle}) {
 

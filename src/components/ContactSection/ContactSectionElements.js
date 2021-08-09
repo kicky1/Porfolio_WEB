@@ -1,11 +1,10 @@
 import styled from "styled-components";
-import { keyframes } from 'styled-components'
 
 
 export const ContactContainer = styled.div`
     background: #131419;
     min-height: 100vh;
-    position: relative;
+    
     z-index: 1;
     
 `;
@@ -73,7 +72,7 @@ export const FormBox = styled.div`
 
 
 export const InputLabel = styled.label`
-  display: block;
+ 
   color: #868686;
   margin-bottom: 0px;
   font-size: 2.5vmin;

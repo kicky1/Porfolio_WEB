@@ -3,9 +3,6 @@ import {
     HomeContainer, 
     HomeBg, 
     VideoBg, 
-    HomeItem, 
-    HomeLinks, 
-    HomeMenu, 
     HomeContent,
     HomeP,
     HomeH1} from './HomeSectionElements';
