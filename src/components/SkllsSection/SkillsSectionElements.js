@@ -46,7 +46,7 @@ export const SkillsList = styled.div`
     border-radius: 10px;
     box-shadow: -5px -5px 10px rgba(255,255,255,0.05),
                 5px 5px 15px rgba(0,0,0,0.5);
-    min-height: 30vw;
+   
 
 
 `

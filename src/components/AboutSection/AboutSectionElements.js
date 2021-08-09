@@ -42,7 +42,7 @@ export const H3 = styled.div`
     }
 `;
 
-export const AboutH1 = styled.h1`
+export const AboutH1 = styled.div`
     font-weight: 350;
     font-size: clamp(40px, 5vw, 80px);
     letter-spacing: 1px;

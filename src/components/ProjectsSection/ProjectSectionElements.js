@@ -40,7 +40,7 @@ export const ProjectsContent = styled.div`
    padding: 5% 3% 0 3%;
 `;
 
-export const ProjectsH1 = styled.h1`
+export const ProjectsH1 = styled.div`
     font-weight: 350;
     font-size: clamp(40px, 5vw, 80px);
     letter-spacing: 1px;

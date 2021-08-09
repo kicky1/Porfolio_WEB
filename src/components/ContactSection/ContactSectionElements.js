@@ -14,7 +14,7 @@ export const ContactContent = styled.div`
     
 `;
 
-export const ContactH1 = styled.h1`
+export const ContactH1 = styled.div`
     font-weight: 350;
     font-size: clamp(40px, 5vw, 80px);
     letter-spacing: 1px;
