@@ -1,6 +1,5 @@
 import './App.css';
 import Home from './pages/index';
-import { useEffect, useState } from 'react';
 
 import {BrowserRouter as Router} from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor"

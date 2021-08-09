@@ -54,7 +54,7 @@ export const Logo = styled.div`
     } 
 `;
 
-export const NavLink = styled(LinkS)`
+export const NavLink = styled.div`
     position: relative;
     margin: 0 15px;
     text-decoration: none;

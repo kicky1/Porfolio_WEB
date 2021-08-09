@@ -31,7 +31,7 @@ export const LinkSevenet = styled.a`
     }
 `;
 
-export const H3 = styled.h4`
+export const H3 = styled.div`
     color: #fff;
     font-size: clamp( 14px, 2.5vmin, 30px); 
     font-weight: 450;
@@ -88,7 +88,7 @@ export const Grid = styled.div`
 `;
 
 
-export const AboutP= styled.p`
+export const AboutP= styled.div`
     color: #fff;
     font-size: clamp( 14px, 2.5vmin, 30px); 
     padding-top: 4%;

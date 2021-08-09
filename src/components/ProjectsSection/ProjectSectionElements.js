@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import styled, { css, keyframes } from 'styled-components';
 
 import image1 from '../../images/image1.svg';
