@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-
-
 export const HomeContainer = styled.div`
     background: #131419;
     height: 100vh;
@@ -46,7 +44,6 @@ export const HomeContent = styled.div`
     z-index: 3;
     padding: 1% 3% 3% 3%;
     position: absolute;
-    display: flex;
     flex-direction: column;
     align-items: center;
 `;
@@ -83,7 +80,7 @@ export const HomeP = styled.p`
 `;
 
 export const HomeMenu = styled.ul`
-    display: flex;
+
     align-items: center;
     list-style: none;
     text-align: center;
