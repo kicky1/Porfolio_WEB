@@ -66,7 +66,7 @@ export const HomeH1 = styled.div`
     }
 `;
 
-export const HomeP = styled.p`
+export const HomeP = styled.div`
     color: #fff;
     font-size: clamp(24px, 3.2vw, 60px);
     text-align: center;
