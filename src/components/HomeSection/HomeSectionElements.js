@@ -48,7 +48,7 @@ export const HomeContent = styled.div`
     align-items: center;
 `;
 
-export const HomeH1 = styled.h1`
+export const HomeH1 = styled.div`
     font-weight: 800;
     font-size: clamp(50px, 8vw, 100px);
     padding: 0 2px;
