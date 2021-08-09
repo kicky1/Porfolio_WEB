@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Nav = styled.nav`
+export const Nav = styled.div`
     position: fixed;
     top: 0;
     left: 0;
@@ -9,7 +9,9 @@ export const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    padding: 10px 50px;
+    // padding: 10px 50px;
+
+    padding: 10px;
     z-index: 2;
     background-color: ${({ scrollY }) => (scrollY > 100 ? "#131419" : "transparent")};
     border: ${({ scrollY }) => (scrollY > 100 ? "1px solid" : "none")}; 
@@ -76,7 +78,29 @@ export const NavLink = styled.div`
 
 export const NavIcon = styled.div`
     position: relative;
-    margin: 0 5px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+
+    &:hover {
+        color: #01bf71;
+        transition: 0.2s ease-in-out
+    }
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+
+    @media only screen and (min-height: 1200px){
+        font-size: clamp(30px, 2.3vh, 50px);
+        margin: 0 10px;
+    } 
+`;
+
+export const NavIcon2 = styled.div`
+    position: relative;
+    margin: 0 10px;
     text-decoration: none;
     color: #fff;
     font-size: 1.2em;

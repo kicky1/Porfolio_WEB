@@ -1,5 +1,5 @@
 import React from 'react'
-import {Nav, NavbarContainer, NavIcon, Point,MobileIcon, NavLink, Logo} from './NavbarElements'
+import {Nav, NavbarContainer, NavIcon,NavIcon2, Point,MobileIcon, NavLink, Logo} from './NavbarElements'
 import {GoMarkGithub} from 'react-icons/go';
 import {ImLinkedin} from 'react-icons/im';
 import {FaBars} from 'react-icons/fa';
@@ -72,9 +72,9 @@ function Navbar({toggle}) {
                         Kontakt
                         </Link>
                     </NavLink>
-                    <NavIcon>
+                    <NavIcon2>
                         <GoMarkGithub/>
-                    </NavIcon>
+                    </NavIcon2>
                     <NavIcon>
                         <ImLinkedin/> 
                     </NavIcon>
