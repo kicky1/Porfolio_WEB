@@ -85,7 +85,7 @@ export const InputLabel = styled.label`
 export const Input = styled.input`
     margin-top: 10px;
     text-align: left;
-    padding: 10px 15px;
+
     width: 100%;
     height: 50px;
     color: #868686;
