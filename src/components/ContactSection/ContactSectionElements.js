@@ -92,7 +92,7 @@ export const Input = styled.input`
     background: #131419;
     border: none;
     outline: none;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 18px;
     box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
         inset 2px 2px 6px rgba(0, 0, 0, 0.8);    
@@ -107,7 +107,7 @@ export const Textarea = styled.textarea`
     padding: 10px 15px;
     border: none;
     outline: none;
-    border-radius: 20px; 
+    border-radius: 10px; 
     width: 100%; 
     box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
     inset 2px 2px 6px rgba(0, 0, 0, 0.8);

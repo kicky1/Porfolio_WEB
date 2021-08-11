@@ -50,7 +50,7 @@ export const HomeContent = styled.div`
 `;
 
 export const HomeH1 = styled.div`
-    font-weight: 500;
+    font-weight: 200;
     font-size: clamp(50px, 8vw, 100px);
     padding: 0 2px;
     color:#EBEBEB;
@@ -70,7 +70,7 @@ export const HomeP = styled.div`
     color: #fff;
     font-size: clamp(24px, 3.2vw, 60px);
     text-align: center;
-    font-weight: 300;
+    font-weight: 50;
 
     @media screen and (max-width: 488px){
         font-size:  20px;
