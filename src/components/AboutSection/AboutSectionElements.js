@@ -5,6 +5,7 @@ import { keyframes } from 'styled-components'
 export const AboutContainer = styled.div`
     background: #131419;
     height: 100vh;
+    width: 100%;
     position: relative;
     display: flex;
     z-index: 1;

@@ -145,6 +145,7 @@ export const Overlay = styled.div`
 export const ProjectsContainer = styled.div`
     background: #131419;
     min-height: 100vh;
+    width: 100%;
 `;
 
 export const ProjectsContent = styled.div`
