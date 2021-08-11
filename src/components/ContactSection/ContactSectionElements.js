@@ -15,11 +15,9 @@ export const ContactContent = styled.div`
 `;
 
 export const ContactH1 = styled.div`
-    font-weight: 350;
+    font-weight: 300;
     font-size: clamp(40px, 5vw, 80px);
-    letter-spacing: 1px;
-    color:#fff;
-    font-family: 'Segoe UI';
+    color:#EBEBEB;
 
     @media screen and (max-width: 768px){
         font-size: clamp(30px, 6,5vw, 50px);
@@ -87,6 +85,7 @@ export const InputLabel = styled.label`
 export const Input = styled.input`
     margin-top: 10px;
     text-align: left;
+    padding: 10px 15px;
     width: 100%;
     height: 50px;
     color: #868686;
@@ -105,6 +104,7 @@ export const Textarea = styled.textarea`
     color: #868686;
     resize: none;
     background: #131419;
+    padding: 10px 15px;
     border: none;
     outline: none;
     border-radius: 20px; 
@@ -149,13 +149,12 @@ export const Item = styled.div`
 
 
 export const AboutP= styled.div`
-    color: #fff;
+    color: #EBEBEB;
     font-size: clamp( 14px, 2.5vmin, 30px); 
     padding-top: 4%;
     padding-bottom: 1%;
     letter-spacing: 2px; 
-    line-height: 1.6em;
-    font-family: 'Segoe UI';
+    line-height: 1.3em;
     font-weight: 250;
 
     @media only screen and (max-width: 768px){
@@ -165,7 +164,7 @@ export const AboutP= styled.div`
 
 export const Icon= styled.div`
     padding-top: 10%;
-    color: #fff;
+    color: #EBEBEB;
     max-width: clamp( 20px, 5vmin, 50px); 
     font-size: clamp( 20px, 2.5vmin, 50px);
     white-space:nowrap;

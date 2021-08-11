@@ -18,11 +18,9 @@ export const SkillsWrapper = styled.div`
 `;
 
 export const SkillstH1 = styled.div`
-    font-weight: 350;
+    font-weight: 300;
     font-size: clamp(40px, 5vw, 80px);
-    letter-spacing: 1px;
-    color:#fff;
-    font-family: 'Segoe UI';;
+    color:#EBEBEB;
     padding-bottom: 4%;
     
     
@@ -47,8 +45,6 @@ export const SkillsList = styled.div`
     box-shadow: -5px -5px 10px rgba(255,255,255,0.05),
                 5px 5px 15px rgba(0,0,0,0.5);
    
-
-
 `
 
 
@@ -76,12 +72,10 @@ export const SkillsInfo = styled.div`
     text-transform: uppercase;
     font-size: clamp(12px, 2vw, 20px);
     white-space: nowrap;
-    margin-top: 10px;
-    color: #fff;
-
-    letter-spacing: 2px; 
-    line-height: 1.3em;
-    font-family: 'Segoe UI';
+    margin-top: 7px;
+    color: #EBEBEB;
+    letter-spacing: 1px; 
+    line-height: 1.2em;
     font-weight: 250;
 `
 

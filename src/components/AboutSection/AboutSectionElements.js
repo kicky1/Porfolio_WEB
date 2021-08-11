@@ -43,13 +43,10 @@ export const H3 = styled.div`
 `;
 
 export const AboutH1 = styled.div`
-    font-weight: 350;
+    font-weight: 300;
     font-size: clamp(40px, 5vw, 80px);
-    letter-spacing: 1px;
-    color:#fff;
-    font-family: 'Segoe UI';
-    
-    
+    color:#EBEBEB;
+
 
     @media screen and (max-width: 768px){
         font-size: clamp(30px, 6,5vw, 50px);
@@ -89,14 +86,13 @@ export const Grid = styled.div`
 
 
 export const AboutP= styled.div`
-    color: #fff;
+    color: #EBEBEB;;
     font-size: clamp( 14px, 2.5vmin, 30px); 
     padding-top: 4%;
     padding-bottom: 1%;
-    letter-spacing: 2px; 
-    line-height: 1.6em;
-    font-family: 'Segoe UI';
-    font-weight: 250;
+    letter-spacing: 1px; 
+    line-height: 1.4em;
+    font-weight: 200;
 
     @media only screen and (max-width: 768px){
         font-size: 3vmin;

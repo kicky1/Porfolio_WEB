@@ -1,5 +1,116 @@
 import styled from 'styled-components';
+import {ButtonBack, ButtonNext } from 'pure-react-carousel';
+import {RightArrowAlt} from "@styled-icons/boxicons-regular/RightArrowAlt";
+import {LeftArrowAlt} from "@styled-icons/boxicons-regular/LeftArrowAlt";
 
+export const NButtonBack = styled(ButtonBack)`
+    margin-top: 20px;
+    color: #868686;
+    background: #131419;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.8);
+    width: 12vw;
+    height: 6vh;
+    font-size: 3vh;
+
+    &:hover {
+        box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
+            inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+        
+    }
+
+    @media (min-height: 1000px){
+        font-size: 2vh;
+        width: 10vw;
+        height: 5vh;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 2vh;
+        width: 6rem;
+        height: 2.5rem;
+    }
+`;
+
+export const RightArrowAlt2 = styled(RightArrowAlt)`
+
+    width: 48px;
+   
+
+    @media (min-height: 1000px){
+        font-size: 2vh;
+        width: 10vw;
+        height: 5vh;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 2vh;
+        width: 6rem;
+        height: 2.5rem;
+    }
+`;
+
+export const LeftArrowAlt2 = styled(LeftArrowAlt)`
+
+    width: 48px;
+
+    @media (min-height: 1000px){
+        font-size: 2vh;
+        width: 10vw;
+        height: 5vh;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 2vh;
+        width: 6rem;
+        height: 2.5rem;
+    }
+`;
+
+export const NButtonNext = styled(ButtonNext)`
+    margin-top: 20px;
+    color: #868686;
+    background: #131419;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.8);
+    width: 12vw;
+    height: 6vh;
+    font-size: 3vh;
+    margin-left:100px;
+
+    &:hover {
+        box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
+            inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+        
+    }
+
+    @media (min-height: 1000px){
+        font-size: 2vh;
+        width: 10vw;
+        height: 5vh;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 2vh;
+        width: 6rem;
+        height: 2.5rem;
+    }
+`;
+
+export const ButtonContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+
+`;
 
 
 export const Image = styled.img`
@@ -41,11 +152,9 @@ export const ProjectsContent = styled.div`
 `;
 
 export const ProjectsH1 = styled.div`
-    font-weight: 350;
+    font-weight: 300;
     font-size: clamp(40px, 5vw, 80px);
-    letter-spacing: 1px;
-    color:#fff;
-    font-family: 'Segoe UI';
+    color:#EBEBEB;
     
     @media screen and (max-width: 768px){
         font-size: clamp(30px, 4vw, 50px);
@@ -117,7 +226,6 @@ export const ProjectsInfo = styled.div`
     padding-bottom: 1%;
     letter-spacing: 2px; 
     line-height: 1.2em;
-    font-family: 'Segoe UI';
     font-weight: 250;
     
     @media screen and (max-width: 488px){
@@ -137,7 +245,6 @@ export const ProjectsTech = styled.div`
     padding-bottom: 1%;
     letter-spacing: 2px; 
     line-height: 1.2em;
-    font-family: 'Segoe UI';
     font-weight: 250;
     text-align: left;
 

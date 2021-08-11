@@ -24,7 +24,7 @@ function AboutSectionElements() {
                                     na Politechnice Gdańskiej.
                                 </AboutP>
                                 <AboutP>
-                                    Aktualnie pracuję jako Fonr-End Developer w <LinkSevenet href='https://sevenet.pl/pl'>Sevenet</LinkSevenet>.
+                                    Aktualnie pracuję jako Front-End Developer w <LinkSevenet href='https://sevenet.pl/pl'>Sevenet</LinkSevenet>.
                                 </AboutP>
                                 <a href="https://docdro.id/Nj7kHd3">
                                     <Button>CV</Button>
