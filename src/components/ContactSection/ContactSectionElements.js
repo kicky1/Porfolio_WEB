@@ -29,16 +29,16 @@ export const ContactH1 = styled.div`
 `;
 
 export const ContactWrapper = styled.form`
-    min-height: 30vmin;
-    padding: 1% 2% 2% 2%;
-    border-radius: 10px;
-    background: #131419;
-    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
-        5px 5px 15px rgba(0, 0, 0, 0.5);
+    // min-height: 30vmin;
+    // padding: 1% 2% 2% 2%;
+    // border-radius: 10px;
+    // background: #131419;
+    // box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.05),
+    //     5px 5px 15px rgba(0, 0, 0, 0.5);
 
-    @media only screen and (min-height: 1200px){
-        min-height: 50vmin;
-    }   
+    // @media only screen and (min-height: 1200px){
+    //     min-height: 50vmin;
+    // }   
 
 `;
 
@@ -151,7 +151,7 @@ export const Item = styled.div`
 export const AboutP= styled.div`
     color: #EBEBEB;
     font-size: clamp( 14px, 2.5vmin, 30px); 
-    padding-top: 4%;
+    padding-top: 9vh;
     padding-bottom: 1%;
     letter-spacing: 2px; 
     line-height: 1.3em;
@@ -159,6 +159,7 @@ export const AboutP= styled.div`
 
     @media only screen and (max-width: 768px){
         font-size: 3vmin;
+        padding-top: 1%;
     }
 `;
 
