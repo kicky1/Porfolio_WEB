@@ -21,7 +21,7 @@ import ecommerce from '../../images/ecommerce.svg'
 import etrener from '../../images/etrener.svg'
 import flowchart from '../../images/flowchart.svg'
 import video from '../../images/video.svg'
-import { CarouselProvider, Slider, Slide } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, Dot } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function ProjectsSection() {
@@ -79,8 +79,11 @@ function ProjectsSection() {
                                         </ContainerP>
                                   
                                     </Slide>
+                                    
                                 ))
-                                }   
+                                
+                                } 
+                                
                         </Slider>
                         <ButtonContainer>
                         <NButtonBack><LeftArrowAlt2/></NButtonBack>

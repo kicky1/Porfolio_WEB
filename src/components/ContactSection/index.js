@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {ContactContainer, ContactContent, ContactH1, ContactWrapper,
     InputBox, MessageBox, InputLabel, Textarea, Input, ContactForm, Grid, MainGrid, Item, AboutP, Icon, Button, FormBox  } from './ContactSectionElements'
 
@@ -8,6 +8,29 @@ import {Phone} from '@styled-icons/bootstrap/Phone'
 
 function ContactSectionElements() {
 
+    const [status, setStatus] = useState("Wyślij");
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      setStatus("Wysyłanie...");
+      const { name, email, subject, message } = e.target.elements;
+      let details = {
+        name: name.value,
+        email: email.value,
+        subject: subject.value,
+        message: message.value,
+      };
+      let response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(details),
+      });
+      setStatus("Wyślij");
+      let result = await response.json();
+      alert(result.status);
+    };
+
 
     return (
         <>
@@ -16,7 +39,7 @@ function ContactSectionElements() {
                         <ContactH1>Kontakt</ContactH1>
                     <MainGrid>
                         <Item>
-                                <ContactForm> 
+                                <ContactForm onSubmit={handleSubmit}> 
                                     <ContactWrapper>
                                         <InputBox>
                                             <Grid>
@@ -39,7 +62,7 @@ function ContactSectionElements() {
                                             <Textarea name="message" rows="12"></Textarea>
                                         </MessageBox>
                                         <FormBox>
-                                            <Button>Wyślij</Button>
+                                            <Button type="submit">{status}</Button>
                                         </FormBox>  
                                     </ContactWrapper>
                                 </ContactForm> 
